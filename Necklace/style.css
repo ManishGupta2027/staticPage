@@ -2,3 +2,35 @@
 {
     background-color: #f9ebf9;
 }
+
+.zoom-effect {
+    overflow: hidden; /* Ensures the image is cropped if it scales beyond the container */
+    display: inline-block; /* Helps to align images neatly within parent containers */
+}
+
+.zoom-image {
+    transition: transform 0.3s ease-in-out; /* Controls the speed of the zoom */
+}
+
+.zoom-image:hover {
+    transform: scale(1.1); /* Adjust this value for more or less zoom */
+}
+
+.start-50 {
+    left: 32% !important;
+}
+
+
+.nav-underline .nav-link {
+    border-bottom: 2px solid transparent; /* Default state with no underline */
+    padding-bottom: 4px; /* Adds some space between text and underline */
+    transition: border-bottom 0.3s ease; /* Smooth transition for underline */
+}
+
+.nav-underline .nav-link.active {
+    border-bottom: 2px solid #000; /* Adds underline to active tab */
+}
+
+.nav-underline .nav-link:hover::after {
+    width: 100%; /* Full-width underline on hover */
+}
