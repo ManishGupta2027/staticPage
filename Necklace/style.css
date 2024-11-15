@@ -20,7 +20,7 @@
     left: 32% !important;
 }
 
-
+/* tabs section start */
 .nav-underline .nav-link {
     border-bottom: 2px solid transparent; /* Default state with no underline */
     padding-bottom: 4px; /* Adds some space between text and underline */
@@ -33,4 +33,23 @@
 
 .nav-underline .nav-link:hover::after {
     width: 100%; /* Full-width underline on hover */
+}
+
+
+/* carausel section start */
+.carousel-indicators button {
+    width: 10px !important; /* Set the width */
+    height: 10px!important; /* Set the height */
+    border-radius: 50%; /* Make the buttons circular */
+    background-color: #000; /* Color of the button (default black) */
+    border: none; /* Remove any border */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.carousel-indicators .active {
+    background-color: black; /* Color of the active indicator (blue) */
+}
+
+.carousel-indicators button:hover {
+    background-color: #181919; /* Change color on hover (dark blue) */
 }
