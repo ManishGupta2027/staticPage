@@ -107,26 +107,92 @@
 
 
         <!-- third section -->
-        <div class="d-flex justify-content-between align-items-center">
-            <div>
-                BROWSE CATEGORIES
-            </div>
-            <div>
-                <ul class="nav justify-content-center">
-                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="./index.html" class="nav-link px-2 link-secondary text-uppercase me-2">Home</a></li>
-                        <li><a href="./list.html" class="nav-link px-2 link-secondary me-4">SHOP</a></li>
-                        <li><a href="./detail.html" class="nav-link px-2 link-secondary me-4">PRODUCT</a></li>
-                        <li><a href="#" class="nav-link px-2 link-secondary me-4">BLOG</a></li>
-                        <li><a href="#" class="nav-link px-2 link-secondary me-4">PAGE</a></li>
-                    </ul>
+        <div class="d-flex justify-content-between align-items-center border-bottom px-2">
+            <!-- Browse Categories Dropdown -->
+            <div class="dropdown">
+                <button class="btn btn-link dropdown-toggle text-uppercase text-decoration-none text-dark" type="button" id="browseCategoriesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    Browse Categories
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="browseCategoriesDropdown">
+                    <li><a class="dropdown-item" href="#">Electronics</a></li>
+                    <li><a class="dropdown-item" href="#">Clothing</a></li>
+                    <li><a class="dropdown-item" href="#">Accessories</a></li>
+                    <li><a class="dropdown-item" href="#">Home & Garden</a></li>
+                    <li><a class="dropdown-item" href="#">Books</a></li>
                 </ul>
             </div>
-            <div class="d-flex gap-4">
-                <a href="#" class="text-decoration-none text-dark fw-light">(+800) 1234 56</a>
-                <a href="#" class="text-decoration-none text-dark fw-light">  Our Stores</a>
+        
+            <!-- Navigation Links -->
+            <div >
+                <ul class="nav justify-content-center">
+                    <!-- Home Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase text-decoration-none text-dark" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="./index.html">Main Home</a></li>
+                            <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+                        </ul>
+                    </li>
+        
+                    <!-- Shop Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase text-decoration-none text-dark" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                            <li><a class="dropdown-item" href="./shop.html">Shop Now</a></li>
+                            <li><a class="dropdown-item" href="./offers.html">Special Offers</a></li>
+                        </ul>
+                    </li>
+        
+                    <!-- Product Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase text-decoration-none text-dark" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productDropdown">
+                            <li><a class="dropdown-item" href="./products.html">All Products</a></li>
+                            <li><a class="dropdown-item" href="./new-arrivals.html">New Arrivals</a></li>
+                        </ul>
+                    </li>
+        
+                    <!-- Blog Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase text-decoration-none text-dark" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                            <li><a class="dropdown-item" href="./blog.html">Our Blog</a></li>
+                            <li><a class="dropdown-item" href="./news.html">Latest News</a></li>
+                        </ul>
+                    </li>
+        
+                    <!-- Page Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase text-decoration-none text-dark" href="#" id="pageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Page
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pageDropdown">
+                            <li><a class="dropdown-item" href="./contact.html">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- Contact and Stores -->
+            <div class="d-flex gap-2">
+                <a href="tel:+800123456" class="text-decoration-none text-dark fw-light">
+                    <i class="bx bx-phone me-2"></i>(+800) 1234 56
+                </a>
+                <a href="#" class="text-decoration-none text-dark fw-light">
+                    <i class="bx bx-store-alt me-2"></i>Our Stores
+                </a>
             </div>
         </div>
+        
     </header>
     <!--end navbar-->
     <main>
