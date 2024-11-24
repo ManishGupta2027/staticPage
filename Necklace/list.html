@@ -19,41 +19,188 @@
     <link href='./style.css' rel='stylesheet'>
     <title>Document</title>
 </head>
-<header>
-    <header
-    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-                <form class="d-flex " role="search">
-                    <input class="form-control me-2 rounded-0"  type="search" placeholder="Search" aria-label="Search">
-                    <i class='bx bx-search'></i>
-                </form>
-    </ul>
-    <div class="col-md-3 mb-2 mb-md-0">
-        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none justify-content-center">
-            <img src="./image/alk_logo_footer.png" alt="" class="img-fluid w-50">
-        </a>
-    </div>
-    <div class="btn-group" role="group">
-        <i class='bx bx-user bx-sm me-3'></i>
-        <i class='bx bx-heart bx-sm me-3'></i>
-        <i class='bx bx-cart-alt bx-sm me-3'></i>
-    </div>
-</div>
-</header>
-<header>
-    <ul class="nav justify-content-center">
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="./index.html" class="nav-link px-2 link-secondary text-uppercase me-2">home</a></li>
-            <li><a href="./list.html" class="nav-link px-2 link-secondary me-4">SHOP</a></li>
-            <li><a href="./detail.html" class="nav-link px-2 link-secondary me-4">PRODUCT</a></li>
-            <li><a href="#" class="nav-link px-2 link-secondary me-4">BLOG</a></li>
-            <li><a href="#" class="nav-link px-2 link-secondary me-4">PAGE</a></li>
-          </ul>
-      </ul>
-</header>
-    <!-- end navbar -->
+    <!--start navbar-->
+    <header>
+        <!-- first section -->
+        <!-- for banner section  start -->
+        <div class="d-flex justify-content-between align-items-center bg-dark text-white py-2 px-4">
+            <!-- Left Section: Language and Currency Dropdowns -->
+            <div class="d-flex align-items-center gap-3">
+                <!-- Language Dropdown -->
+                <div class="dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        English
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+                        <li><a class="dropdown-item" href="#">Urdu</a></li>
+                    </ul>
+                </div>
+                <!-- Currency Dropdown -->
+                <div class="dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        United States (USD $)
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">France (USD $)</a></li>
+                        <li><a class="dropdown-item" href="#">United States (USD $)</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Center Section: Promo Banner -->
+            <div class="text-center">
+                <a href="./detail.html" class="text-decoration-none text-white fw-semibold fs-6">
+                    🌟 Summer Sale 15% Off! <span class="text-warning">Shop Now</span>!
+                </a>
+            </div>
+
+            <!-- Right Section: Navigation Links -->
+            <div class="d-flex gap-4">
+                <a href="./index.html" class="text-decoration-none text-white fw-light hover-underline">Store
+                    Location</a>
+                <a href="./list.html" class="text-decoration-none text-white fw-light hover-underline">Contact</a>
+                <a href="./detail.html" class="text-decoration-none text-white fw-light hover-underline">About</a>
+                <a href="#" class="text-decoration-none text-white fw-light hover-underline">Gift Cards</a>
+            </div>
+        </div>
+
+        <!-- second section -->
+        <div class="d-flex align-items-center justify-content-between py-3 px-2 border-bottom">
+            <!-- Search Bar -->
+            <div class="position-relative">
+                <input class="form-control rounded-0 ps-4 pe-5" type="search" placeholder="Search" aria-label="Search">
+                <i class="bx bx-search position-absolute top-50 end-0 translate-middle-y pe-3"></i>
+            </div>
+
+            <!-- Logo -->
+            <div class="text-center pe-5 me-5">
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none align-items-center">
+                    <img src="./image/alk_logo_footer.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+                </a>
+            </div>
+
+            <!-- Action Icons -->
+            <div class="d-flex align-items-center gap-3 position-relative">
+                <!-- User Icon -->
+                <a href="#" class="text-dark position-relative">
+                    <i class="bx bx-user bx-sm"></i>
+                </a>
+
+                <!-- Heart Icon with Badge -->
+                <a href="#" class="text-dark position-relative">
+                    <i class="bx bx-heart bx-sm"></i>
+                    <span class="badge bg-danger rounded-circle position-absolute top-0 start-100 translate-middle"
+                        style="font-size: 0.6rem; min-width: 1rem; height: 1rem;">
+                        3
+                    </span>
+                </a>
+
+                <!-- Cart Icon with Badge -->
+                <a href="#" class="text-dark position-relative">
+                    <i class="bx bx-cart-alt bx-sm"></i>
+                    <span class="badge bg-danger rounded-circle position-absolute top-0 start-100 translate-middle"
+                        style="font-size: 0.6rem; min-width: 1rem; height: 1rem;">
+                        5
+                    </span>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- third section -->
+        <div class="d-flex justify-content-between align-items-center border-bottom px-4 py-3">
+            <!-- Browse Categories Dropdown -->
+            <div class="dropdown">
+                <button class="btn btn-link dropdown-toggle text-uppercase text-decoration-none text-dark fw-semibold" type="button" id="browseCategoriesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    Browse Categories
+                </button>
+                <ul class="dropdown-menu shadow-lg" aria-labelledby="browseCategoriesDropdown">
+                    <li><a class="dropdown-item" href="#">Electronics</a></li>
+                    <li><a class="dropdown-item" href="#">Clothing</a></li>
+                    <li><a class="dropdown-item" href="#">Accessories</a></li>
+                    <li><a class="dropdown-item" href="#">Home & Garden</a></li>
+                    <li><a class="dropdown-item" href="#">Books</a></li>
+                </ul>
+            </div>
+        
+            <!-- Navigation Links -->
+            <div>
+                <ul class="nav justify-content-center gap-4">
+                    <!-- Home Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase text-decoration-none text-dark fw-semibold" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu shadow-lg" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="./index.html">Main Home</a></li>
+                            <li><a class="dropdown-item" href="./about.html">About Us</a></li>
+                        </ul>
+                    </li>
+        
+                    <!-- Shop Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase text-decoration-none text-dark fw-semibold" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu shadow-lg" aria-labelledby="shopDropdown">
+                            <li><a class="dropdown-item" href="./shop.html">Shop Now</a></li>
+                            <li><a class="dropdown-item" href="./offers.html">Special Offers</a></li>
+                        </ul>
+                    </li>
+        
+                    <!-- Product Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase text-decoration-none text-dark fw-semibold" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu shadow-lg" aria-labelledby="productDropdown">
+                            <li><a class="dropdown-item" href="./products.html">All Products</a></li>
+                            <li><a class="dropdown-item" href="./new-arrivals.html">New Arrivals</a></li>
+                        </ul>
+                    </li>
+        
+                    <!-- Blog Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase text-decoration-none text-dark fw-semibold" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu shadow-lg" aria-labelledby="blogDropdown">
+                            <li><a class="dropdown-item" href="./blog.html">Our Blog</a></li>
+                            <li><a class="dropdown-item" href="./news.html">Latest News</a></li>
+                        </ul>
+                    </li>
+        
+                    <!-- Page Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase text-decoration-none text-dark fw-semibold" href="#" id="pageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Page
+                        </a>
+                        <ul class="dropdown-menu shadow-lg" aria-labelledby="pageDropdown">
+                            <li><a class="dropdown-item" href="./contact.html">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- Contact and Stores -->
+            <div class="d-flex gap-3 align-items-center">
+                <a href="tel:+800123456" class="text-decoration-none text-dark fw-light">
+                    <i class="bx bx-phone me-2"></i>(+800) 1234 56
+                </a>
+                <a href="#" class="text-decoration-none text-dark fw-light">
+                    <i class="bx bx-store-alt me-2"></i>Our Stores
+                </a>
+            </div>
+        </div>
+        
+        
+    </header>
+    <!--end navbar-->
 
     <body>
         <main>
