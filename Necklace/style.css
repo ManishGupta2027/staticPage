@@ -77,3 +77,7 @@
 .light-orange-color{
     background-color: hsl(15, 48%, 81%);
 }
+
+.col-gap {
+    gap: 1rem; /* Adjust the value for desired spacing */
+  }
